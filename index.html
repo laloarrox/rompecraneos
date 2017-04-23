@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="css/area.css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="js/funcion.js" type="text/jscript"></script>
+
+</head> 
+<body> 
+
+<div data-role="page" id="menu" class="">
+
+	<div data-role="header">
+    	<h1>ROMPECABEZAS</h1>
+    </div>
+    
+    <div id="pic-choice" data-role="fieldcontain">
+    	<fieldset data-role="controlgroup">
+        	<legend>
+            	Escoja la imagen que desea armar:
+            </legend>
+            
+            <input type="radio" name="pic-choice" id="pic-choice-3" value="imagenes/001.jpg"
+            checked="checked" /> 
+            <label for="pic-choice-3">
+            	<img width="32" src="imagenes/001.jpg" />
+                Hinatha shoyo
+            </label>
+			
+            <input type="radio" name="pic-choice" id="pic-choice-2" value="imagenes/002.jpg"
+            checked="checked" />
+            <label for="pic-choice-2">
+            	<img width="32" src="imagenes/002.jpg" />
+                Nisinoyha kuun
+             </label>
+			 
+             <input type="radio" name="pic-choice" id="pic-choice-1" value="imagenes/003.jpg"
+            checked="checked" />
+            <label for="pic-choice-1">
+            	<img width="32" src="imagenes/003.jpg" />
+                shoyo black
+            </label>
+			
+             
+        </fieldset>
+    </div>
+             
+    <div data-role="fieldcontain">
+        <label for="difficulty" " class="select ">Escoja el nivel de juego:</label>
+                
+        <select name="difficulty " " id="difficulty">
+			<option value="3">
+                Facil (9 piezas)
+            </option>
+            <option value="4" selected="1">
+                Normal (16 piezas)
+            </option>
+            <option value="5">
+                Dificil (25 piezas)
+            </option>
+			
+			</select>
+	</div>
+	<a id="play-button" href="#game" data-role="button">JUGAR AHORA!</a>
+</div>
+</div>
+
+	<div id="game" data-role="page" data-backbtn="false">
+		<div data-role="header" data-backbtn="false">
+		
+			<h1>
+				ROMPECABEZAS
+			</h1>
+		</div>
+		<div data-role="content">
+			<div id="pic-frame">
+				<div id="pic-guide">
+				</div>
+			</div>
+		
+			<a href="#menu" data-role="button">REGRESA AL INICIO</a>
+		</div>
+	</div>
+
+	<div id="well-done" data-role="page">
+		<div data-role="header" data-backbtn="false">
+			<h1>
+				RESUELTO
+			</h1>
+		</div>
+		<div data-role="content">
+			<img id="well-done-image" width="280" height="280" />
+			<a href="#menu" data-role="button">REGRESA AL MENU PRINCIPAL</a>
+		</div>
+	</div>
+
+			
+
+
+
+
+</body>
+</html>
